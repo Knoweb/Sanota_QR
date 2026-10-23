@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Download, Check, Sparkles, Wrench, Globe, ChevronRight } from 'lucide-react';
+import { ArrowUpRight, Download, Check, Sparkles } from 'lucide-react';
 import QRCode from 'qrcode';
 import { QrCodeRenderer } from './QrCodeRenderer';
 import { ContactFooter } from './ContactFooter';
@@ -107,29 +107,6 @@ export function ConferenceDisplay({ qrUrl, onExploreClick }) {
             <p className="hero-mission-statement">
               Discover how SANOTA brings engineering, automation and digital technology together to solve real industrial challenges.
             </p>
-
-            {/* Left Organized Info Cards */}
-            <div className="left-structured-cards">
-              <div className="left-info-card">
-                <div className="info-card-icon-wrap">
-                  <Wrench size={15} className="info-icon" />
-                </div>
-                <div className="info-card-text">
-                  <h4>Turnkey Execution</h4>
-                  <p>Machinery, PLC automation &amp; digital platforms under one coordinated team.</p>
-                </div>
-              </div>
-
-              <div className="left-info-card">
-                <div className="info-card-icon-wrap">
-                  <Globe size={15} className="info-icon" />
-                </div>
-                <div className="info-card-text">
-                  <h4>1,250+ Engagements</h4>
-                  <p>Trusted industrial solutions developed across diverse operating environments.</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* =========================================
@@ -194,11 +171,11 @@ export function ConferenceDisplay({ qrUrl, onExploreClick }) {
           </div>
 
           {/* =========================================
-              Right Column: Organized Luxury Cards (01, 02, 03)
+              Right Column: Organized Luxury Cards (Official Categories)
              ========================================= */}
           <div className="screen-col-right">
             <div className="section-label">
-              <span>ONE TEAM. CONNECTED EXPERTISE.</span>
+              <span>CORE ENGINEERING DOMAINS</span>
             </div>
 
             {/* Organized Cards Stack */}
@@ -206,11 +183,11 @@ export function ConferenceDisplay({ qrUrl, onExploreClick }) {
               <div className="expertise-luxury-card" onClick={onExploreClick}>
                 <div className="card-index-row">
                   <span className="index-gold">01</span>
-                  <span className="expertise-pill">Machinery</span>
+                  <span className="expertise-pill">Smart Agri</span>
                 </div>
-                <h3 className="card-item-heading">Engineering &amp; machinery</h3>
+                <h3 className="card-item-heading">Smart greenhouse</h3>
                 <p className="card-item-desc">
-                  Practical solutions for real operational requirements.
+                  Climate regulation, automated fertigation &amp; cultivation loops.
                 </p>
               </div>
 
@@ -219,20 +196,20 @@ export function ConferenceDisplay({ qrUrl, onExploreClick }) {
                   <span className="index-gold">02</span>
                   <span className="expertise-pill">Automation</span>
                 </div>
-                <h3 className="card-item-heading">Automation &amp; control</h3>
+                <h3 className="card-item-heading">Industrial automation solutions</h3>
                 <p className="card-item-desc">
-                  Connect processes, equipment and intelligent controls.
+                  Turnkey conveyor systems, PLC architectures &amp; motion control.
                 </p>
               </div>
 
               <div className="expertise-luxury-card" onClick={onExploreClick}>
                 <div className="card-index-row">
                   <span className="index-gold">03</span>
-                  <span className="expertise-pill">IoT &amp; Cloud</span>
+                  <span className="expertise-pill">AI Vision &amp; IoT</span>
                 </div>
-                <h3 className="card-item-heading">IoT &amp; digital platforms</h3>
+                <h3 className="card-item-heading">Vision based systems &amp; IoT</h3>
                 <p className="card-item-desc">
-                  Turn operational data into clearer visibility.
+                  High-speed optical inspection, defect detection &amp; live telemetry.
                 </p>
               </div>
             </div>
