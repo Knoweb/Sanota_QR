@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Sahan Ranasinghe
+N:Ranasinghe;Sahan;;;
+ORG:Sanota (Pvt) Ltd
+TITLE:Managing Director
+TEL;TYPE=CELL,VOICE,PREF:+94716834335
+EMAIL;TYPE=WORK,INTERNET,PREF:sahan@sanotaglobal.com
+URL;TYPE=WORK:https://www.sanotaglobal.com/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/company/sanotalk/
+ADR;TYPE=WORK,POSTAL,PARCEL:;;No. 11/1/2, Udugama road, Makuluwa;Galle;;;Sri Lanka
+LABEL;TYPE=WORK,POSTAL,PARCEL:No. 11/1/2, Udugama road, Makuluwa, Galle, Sri Lanka
+NOTE:Integrated Engineering Solutions - Industrial Automation, Smart Greenhouse, IoT, Vision Systems, R&D.
+END:VCARD

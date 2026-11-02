@@ -167,7 +167,7 @@ export function ShowcaseGallery({ isMobile, onBackToDisplay, onSelectProduct }) 
                   </div>
 
                   <div className="card-status-label">
-                    {product.videoFile ? "PLAY VIDEO DEMO" : "WATCH PREVIEW"}
+                    {product.youtubeId || product.videoFile ? "PLAY VIDEO DEMO" : "WATCH PREVIEW"}
                   </div>
 
                   <div className="card-play-button">

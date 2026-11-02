@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, Video, Monitor } from 'lucide-react';
+import { PRODUCTS_DATA } from '../data/products';
 
 export function Header({ isMobile, currentView, setView }) {
   return (
@@ -40,7 +41,7 @@ export function Header({ isMobile, currentView, setView }) {
               >
                 <Video size={14} />
                 <span>Product Videos</span>
-                <span className="pill-badge">3</span>
+                <span className="pill-badge">{PRODUCTS_DATA.length}</span>
               </button>
             </div>
 

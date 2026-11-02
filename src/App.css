@@ -94,10 +94,10 @@ body {
   text-decoration: none;
 }
 
-/* Big, Bold, Clean SANOTA Logo */
+/* Sleek, Proportionate SANOTA Logo */
 .brand-logo-img {
-  height: 50px;
-  max-height: 54px;
+  height: 34px;
+  max-height: 36px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -672,7 +672,7 @@ body {
    Single Screen Footer Line (42px)
    -------------------------------------------------------- */
 /* ========================================================
-   Site Contact & Engineering Challenge Footer (Image 1 Specs)
+   Site Contact & Leadership Footer
    ======================================================== */
 .site-contact-footer {
   width: 100%;
@@ -685,26 +685,26 @@ body {
 /* Single-Screen Display Mode: Sleek, compact executive bar fitting 100vh */
 .site-contact-footer.display-mode {
   flex-shrink: 0;
-  padding: 8px 40px;
-  background: rgba(255, 255, 255, 0.94);
+  padding: 10px 40px;
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid rgba(23, 19, 91, 0.08);
-  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.02);
 }
 
 .site-contact-footer.display-mode .contact-footer-container {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.15fr 1.25fr 0.9fr;
-  gap: 24px;
+  grid-template-columns: 1.2fr 1.4fr 0.9fr;
+  gap: 32px;
   align-items: center;
 }
 
 /* Showcase Mode: Normal spacious corporate footer */
 .site-contact-footer.showcase-mode {
-  padding: 36px 40px 28px 40px;
+  padding: 32px 40px 24px 40px;
   margin-top: 48px;
   background: #FFFFFF;
   border-top: 1px solid #E5E0D5;
@@ -714,7 +714,7 @@ body {
   max-width: 1380px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.3fr 0.9fr;
+  grid-template-columns: 1.15fr 1.35fr 0.9fr;
   gap: 36px;
   align-items: center;
 }
@@ -724,7 +724,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .heading-accent-dot {
@@ -742,17 +742,83 @@ body {
   letter-spacing: 0.08em;
 }
 
-/* Contact Meta Items */
+/* Column 1: Leadership & Company */
+.footer-col-leadership {
+  display: flex;
+  flex-direction: column;
+}
+
+.leadership-identity-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.leadership-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.director-name {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #17135B;
+  letter-spacing: -0.01em;
+}
+
+.director-designation {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #64748B;
+}
+
+.company-text {
+  color: #C59B27;
+  font-weight: 700;
+}
+
+.btn-footer-vcard {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  color: #17135B;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 4px rgba(23, 19, 91, 0.05);
+}
+
+.btn-footer-vcard:hover {
+  background: #17135B;
+  color: #FFFFFF;
+  border-color: #17135B;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(23, 19, 91, 0.16);
+}
+
+/* Column 2: Direct Contact Meta Items */
+.footer-col-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-meta-list {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 3px 18px;
+  gap: 4px 20px;
 }
 
 .contact-meta-item {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   font-size: 12px;
   font-weight: 600;
   color: #4A5568;
@@ -775,86 +841,15 @@ body {
   color: #718096;
 }
 
-/* Challenge Callout Card (Matching Image 1) */
-.footer-challenge-card {
-  background: linear-gradient(135deg, #0F0C3B 0%, #1A1658 100%);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: 12px;
-  padding: 8px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  box-shadow: 0 4px 16px rgba(23, 19, 91, 0.15);
-  transition: all 0.25s ease;
-}
-
-.footer-challenge-card:hover {
-  border-color: rgba(212, 175, 55, 0.55);
-  box-shadow: 0 6px 20px rgba(23, 19, 91, 0.22);
-}
-
-.challenge-text-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.challenge-title {
-  font-size: 13px;
-  font-weight: 800;
-  color: #FFFFFF;
-  letter-spacing: -0.01em;
-}
-
-.challenge-subtitle {
-  font-size: 11px;
-  font-weight: 500;
-  color: #CBD5E1;
-  margin: 0;
-}
-
-.btn-start-enquiry {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 15px;
-  border-radius: 8px;
-  background: #E5A93C;
-  color: #111424;
-  font-size: 12px;
-  font-weight: 800;
-  text-decoration: none;
-  white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(229, 169, 60, 0.3);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  flex-shrink: 0;
-}
-
-.btn-start-enquiry:hover {
-  background: #F0B74C;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(229, 169, 60, 0.45);
-}
-
-.enquiry-arrow {
-  color: #111424;
-  transition: transform 0.2s ease;
-}
-
-.btn-start-enquiry:hover .enquiry-arrow {
-  transform: translate(2px, -2px);
-}
-
-/* Social Block */
-.footer-social-block {
+/* Column 3: Social Block */
+.footer-col-social {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 3px;
+  gap: 4px;
 }
 
-.site-contact-footer.showcase-mode .footer-social-block {
+.site-contact-footer.showcase-mode .footer-col-social {
   align-items: flex-start;
 }
 
@@ -865,8 +860,8 @@ body {
 }
 
 .social-icon-btn {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: #F3F4F6;
   border: 1px solid #E5E7EB;
@@ -902,11 +897,11 @@ body {
 }
 
 .footer-bottom-brand-tag {
-  font-size: 10px;
+  font-size: 10.5px;
   color: #9CA3AF;
   font-weight: 600;
   letter-spacing: 0.04em;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 /* --------------------------------------------------------
@@ -2060,7 +2055,8 @@ body {
   }
 
   .brand-logo-img {
-    height: 42px;
+    height: 32px;
+    max-height: 34px;
   }
 
   .qr-settings-body {
@@ -2312,7 +2308,8 @@ body {
   transform: translate(2px, -2px);
 }
 
-/* HTML5 Video Player */
+/* HTML5 & YouTube Video Player */
+.youtube-player-responsive-wrap,
 .html5-video-player-wrap {
   width: 100%;
   height: 100%;
@@ -2320,6 +2317,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.youtube-iframe-element {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: none;
+  display: block;
+}
+
+.btn-modal-action.youtube-btn {
+  background: #FFFFFF;
+  color: #DC2626;
+  border-color: rgba(220, 38, 38, 0.25);
+}
+
+.btn-modal-action.youtube-btn:hover {
+  background: #FEF2F2;
+  border-color: #DC2626;
+  color: #B91C1C;
 }
 
 .html5-video-element {
@@ -2445,8 +2463,8 @@ body {
   }
 
   .brand-logo-img {
-    height: 40px;
-    max-height: 42px;
+    height: 28px;
+    max-height: 30px;
   }
 
   /* Showcase Page Container */
@@ -2594,18 +2612,6 @@ body {
     gap: 8px;
   }
 
-  .footer-challenge-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 14px;
-  }
-
-  .btn-start-enquiry {
-    width: 100%;
-    justify-content: center;
-  }
-
   .footer-social-block {
     align-items: center !important;
     text-align: center;
@@ -2615,5 +2621,576 @@ body {
   .social-links-row {
     justify-content: center;
   }
+
+  .vcard-modal-body {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .executive-business-card {
+    padding: 18px;
+  }
+
+  .card-person-name {
+    font-size: 19px;
+  }
+
+  .vcard-qr-side {
+    display: none; /* On phone, scan is not needed since user can tap download directly */
+  }
 }
+
+/* ========================================================
+   vCard / Executive Digital Business Card Modal & Footer
+   ======================================================== */
+.footer-vcard-action-row {
+  margin-top: 8px;
+}
+
+.btn-footer-vcard {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  color: #17135B;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 4px rgba(23, 19, 91, 0.05);
+}
+
+.btn-footer-vcard:hover {
+  background: #17135B;
+  color: #FFFFFF;
+  border-color: #17135B;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(23, 19, 91, 0.16);
+}
+
+.modal-card.vcard-modal-card {
+  width: 100%;
+  max-width: 860px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 25px 60px rgba(15, 12, 59, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  overflow: hidden;
+  animation: modalScaleIn 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vcard-header-bar {
+  padding: 18px 24px;
+  background: #FFFFFF;
+}
+
+.vcard-header-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.05));
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.vcard-header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #B8860B;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.vcard-main-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #17135B;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.vcard-header-gold-line {
+  height: 2px;
+  background: linear-gradient(90deg, #D4AF37 0%, rgba(212, 175, 55, 0.4) 50%, rgba(212, 175, 55, 0.05) 100%);
+  width: 100%;
+}
+
+.vcard-modal-body {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  padding: 24px;
+  background: #FAF8F5;
+}
+
+/* ========================================================
+   Executive Metal Business Card Design
+   ======================================================== */
+.executive-business-card {
+  background: linear-gradient(140deg, #0A0824 0%, #15114D 48%, #1D1763 100%);
+  border-radius: 20px;
+  padding: 24px 26px;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 16px 36px rgba(10, 8, 36, 0.38),
+    0 0 0 1px rgba(212, 175, 55, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25),
+    inset 0 0 24px rgba(212, 175, 55, 0.06);
+}
+
+/* Luxury Gold & Light Sheens */
+.card-gold-glow {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.card-circuit-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 40px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Header Row: Clean Brand Badge & Executive Pill */
+.card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-brand-badge {
+  background: #FFFFFF;
+  padding: 5px 12px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(212, 175, 55, 0.35);
+}
+
+.card-brand-logo {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.card-vip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #F8E7B6;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(184, 134, 11, 0.15) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  padding: 4px 11px;
+  border-radius: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.vip-gem {
+  color: #D4AF37;
+  font-size: 10px;
+}
+
+/* EMV Smart Chip & Contactless */
+.card-chip-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-emv-chip {
+  width: 38px;
+  height: 28px;
+  background: linear-gradient(135deg, #ECC86A 0%, #C99726 50%, #9E7412 100%);
+  border-radius: 6px;
+  position: relative;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 1px solid #7D5B0E;
+}
+
+.chip-inner-grid {
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(125, 91, 14, 0.6);
+  border-radius: 3px;
+}
+
+.chip-inner-grid::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(125, 91, 14, 0.7);
+}
+
+.chip-inner-grid::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(125, 91, 14, 0.7);
+}
+
+.card-nfc-indicator {
+  color: rgba(212, 175, 55, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+/* Identity Section */
+.card-identity-section {
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-person-name {
+  font-size: 21px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.015em;
+  margin: 0 0 4px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.card-person-title {
+  color: #ECC86A;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.card-bullet-sep {
+  color: rgba(212, 175, 55, 0.5);
+  font-size: 10px;
+}
+
+.card-company-name {
+  color: #E2E8F0;
+  font-weight: 600;
+}
+
+.card-divider-line {
+  height: 1px;
+  background: linear-gradient(to right, rgba(212, 175, 55, 0.55), rgba(212, 175, 55, 0.15) 70%, transparent);
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Contact Rows with Sleek Disc Badges */
+.card-contact-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-entry-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 2px 4px;
+  border-radius: 6px;
+}
+
+.card-entry-row:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(2px);
+}
+
+.entry-icon-disc {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(212, 175, 55, 0.08));
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #ECC86A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.entry-text-strong {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.card-entry-row.address-entry {
+  align-items: flex-start;
+}
+
+.entry-address-text {
+  line-height: 1.4;
+  font-size: 12px;
+  color: #94A3B8;
+}
+
+/* Card Bottom Micro-Watermark */
+.card-footer-strap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 10px;
+  color: rgba(212, 175, 55, 0.7);
+  letter-spacing: 0.04em;
+  position: relative;
+  z-index: 1;
+}
+
+.card-edition-tag {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Action Button: Luxury Gold Pill */
+.btn-download-vcard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 20px;
+  margin-top: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #F3D270 0%, #D4AF37 50%, #B8860B 100%);
+  color: #0E0C2B;
+  font-size: 13.5px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  box-shadow: 
+    0 6px 18px rgba(212, 175, 55, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-download-vcard:hover {
+  background: linear-gradient(135deg, #F8DC85 0%, #DEC045 50%, #C79415 100%);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 24px rgba(212, 175, 55, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.btn-download-vcard:active {
+  transform: translateY(0);
+}
+
+.btn-download-success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35) !important;
+}
+
+.vcard-instant-hint {
+  font-size: 11px;
+  color: #64748B;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+/* ========================================================
+   Right Side: Instant Camera Scanner QR Card
+   ======================================================== */
+.vcard-qr-side {
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 20px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(23, 19, 91, 0.05);
+}
+
+.vcard-qr-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #B8860B;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.vcard-qr-viewfinder {
+  position: relative;
+  padding: 10px;
+}
+
+.viewfinder-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: #D4AF37;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.viewfinder-corner.top-left {
+  top: 0;
+  left: 0;
+  border-width: 2.5px 0 0 2.5px;
+  border-top-left-radius: 6px;
+}
+
+.viewfinder-corner.top-right {
+  top: 0;
+  right: 0;
+  border-width: 2.5px 2.5px 0 0;
+  border-top-right-radius: 6px;
+}
+
+.viewfinder-corner.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2.5px 2.5px;
+  border-bottom-left-radius: 6px;
+}
+
+.viewfinder-corner.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2.5px 2.5px 0;
+  border-bottom-right-radius: 6px;
+}
+
+.vcard-qr-box {
+  width: 172px;
+  height: 172px;
+  padding: 8px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(23, 19, 91, 0.08);
+}
+
+.vcard-qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.vcard-qr-skeleton {
+  width: 100%;
+  height: 100%;
+  background: #F1ECE2;
+  border-radius: 8px;
+}
+
+.vcard-qr-caption {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #17135B;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.vcard-scan-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #FAF8F5;
+  border: 1px solid #ECE7DD;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.scan-step-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.step-num {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #17135B;
+  color: #FFFFFF;
+  font-size: 9.5px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-arrow {
+  color: #94A3B8;
+}
+
+.vcard-qr-subtext {
+  font-size: 11px;
+  color: #64748B;
+  line-height: 1.45;
+  margin: 0;
+}
+
 

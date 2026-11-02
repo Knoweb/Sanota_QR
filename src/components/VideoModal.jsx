@@ -13,15 +13,16 @@ export function VideoModal({ product, onClose }) {
   }, [onClose]);
 
   const handleShare = () => {
+    const shareUrl = product.youtubeUrl || window.location.href;
     if (navigator.share) {
       navigator.share({
         title: `SANOTA - ${product.title}`,
         text: product.description,
-        url: window.location.href
+        url: shareUrl
       }).catch(() => {});
     } else {
-      navigator.clipboard.writeText(window.location.href);
-      alert("Link copied to clipboard!");
+      navigator.clipboard.writeText(shareUrl);
+      alert("Video link copied to clipboard!");
     }
   };
 
@@ -34,7 +35,7 @@ export function VideoModal({ product, onClose }) {
             <span className="modal-category-chip">{product.categoryName}</span>
             <span className="modal-status-chip">
               <span className="chip-dot"></span>
-              Video Demonstration
+              {product.youtubeId ? "YouTube HD Demonstration" : "Video Demonstration"}
             </span>
           </div>
 
@@ -45,7 +46,18 @@ export function VideoModal({ product, onClose }) {
 
         {/* Video Player Display */}
         <div className="video-player-container">
-          {product.videoFile ? (
+          {product.youtubeId ? (
+            <div className="youtube-player-responsive-wrap">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${product.youtubeId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+                title={product.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="youtube-iframe-element"
+              />
+            </div>
+          ) : product.videoFile ? (
             <div className="html5-video-player-wrap">
               <video
                 ref={videoRef}
@@ -90,6 +102,21 @@ export function VideoModal({ product, onClose }) {
               <span>Inquire About This Solution</span>
               <ExternalLink size={14} />
             </a>
+
+            {product.youtubeUrl && (
+              <a
+                href={product.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-modal-action youtube-btn"
+                title="Watch directly on YouTube"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                <span>YouTube</span>
+              </a>
+            )}
 
             <button
               onClick={handleShare}
