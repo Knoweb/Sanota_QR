@@ -37,7 +37,7 @@ export const MAIN_CATEGORIES = [
   }
 ];
 
-// Official Videos with YouTube cloud streaming
+// Official Videos with YouTube cloud streaming & local demonstrations
 export const PRODUCTS_DATA = [
   {
     id: "smart-greenhouse-01",
@@ -86,6 +86,29 @@ export const PRODUCTS_DATA = [
     image: "https://img.youtube.com/vi/VN5f-eHXW4Y/hqdefault.jpg",
     duration: "YouTube HD",
     description: "Operational demonstration video for Conveyor System 03 developed by SANOTA Global, showcasing durable industrial performance and modern electrical control panels."
+  },
+  {
+    id: "industrial-automation-04",
+    categoryId: "industrial-automation",
+    categoryName: "Industrial automation solutions",
+    title: "Industrial Automation Machinery",
+    subtitle: "Turnkey industrial machinery and integrated production automation.",
+    youtubeId: "J3qTR-jxt-U",
+    youtubeUrl: "https://www.youtube.com/watch?v=J3qTR-jxt-U",
+    image: "https://img.youtube.com/vi/J3qTR-jxt-U/hqdefault.jpg",
+    duration: "YouTube HD",
+    description: "Operational demonstration of custom industrial automation machinery and automated manufacturing systems engineered by SANOTA Global."
+  },
+  {
+    id: "product-rd-01",
+    categoryId: "product-rd",
+    categoryName: "Product Research and development",
+    title: "Product Research & Development (R&D)",
+    subtitle: "Custom engineering design, prototyping, and special-purpose machine development.",
+    videoFile: "/videos/RnD.mp4",
+    image: "/products/rnd.jpg",
+    duration: "HD Video",
+    description: "Demonstration of SANOTA Global's research and development engineering capabilities, turning innovative concepts into functioning industrial prototypes and specialized machinery."
   },
   {
     id: "iot-system-01",
